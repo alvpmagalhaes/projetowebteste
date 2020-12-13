@@ -37,7 +37,4 @@ insert into SalasDeTeatro(cnpj, nome, email, senha, cidade) values ('55.789.390/
     primary key (id)
 );
 
-show databases;
-
-
 insert into CadastroPromocoes(cnpj, nome_peca, url, preco, dia, horario) values ('71.150.470/0001-40', 'Cisne Negro', 'www.cinesaocarlos.com.br', 5.00, '13/12/2020', '13:00');
