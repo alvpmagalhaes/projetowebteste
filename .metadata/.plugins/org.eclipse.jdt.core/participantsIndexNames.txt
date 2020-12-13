@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+/Users/pedroapolloni/Desktop/Trabalho-DSW-Oficial/projetowebteste/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3847290686.index
+/Livraria/src/main/java
+/Users/pedroapolloni/Desktop/Trabalho-DSW-Oficial/projetowebteste/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1466512211.index
+/Livraria/src/main/java
+/Users/pedroapolloni/Desktop/Trabalho-DSW-Oficial/projetowebteste/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3625681871.index
+/Livraria/src/main/java
+/Users/pedroapolloni/Desktop/Trabalho-DSW-Oficial/projetowebteste/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4290441000.index
+/Livraria/src/main/java
+/Users/pedroapolloni/Desktop/Trabalho-DSW-Oficial/projetowebteste/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/83515971.index
+/Livraria/src/main/java

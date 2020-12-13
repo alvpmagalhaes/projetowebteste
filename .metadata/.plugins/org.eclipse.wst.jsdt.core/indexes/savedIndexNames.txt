@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+/Users/pedroapolloni/Desktop/Trabalho-DSW-Oficial/projetowebteste/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2381830083.index
+4147465557.index
+286621072.index
+3746658115.index
+895454183.index
