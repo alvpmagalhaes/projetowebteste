@@ -14,7 +14,7 @@ public class UsuarioDAO extends GenericDAO {
 
     public void insert(Usuario usuario) {
 
-        String sql = "INSERT INTO Usuario (nome, login, senha, papel) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO SiteVendaDeIngressos (nome, login, senha, papel) VALUES (?, ?, ?, ?)";
 
         try {
             Connection conn = this.getConnection();

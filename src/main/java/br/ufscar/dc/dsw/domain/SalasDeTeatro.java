@@ -2,13 +2,19 @@ package br.ufscar.dc.dsw.domain;
 
 public class SalasDeTeatro {
 	
+	private int id;
 	private String email;
 	private String senha;
 	private String cnpj;
 	private String nome;
 	private String cidade;
 	
-	public SalasDeTeatro() {
+	
+	public SalasDeTeatro(int id, String nome, String cnpj, String cidade) {
+		this.id = id;
+		this.nome = nome;
+		this.cnpj = cnpj;
+		this.cidade = cidade;
 
 	}
 	
@@ -47,6 +53,14 @@ public class SalasDeTeatro {
 	
 	public String getCidade() {
 		return cidade;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 

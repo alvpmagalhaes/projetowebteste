@@ -3,21 +3,22 @@ package br.ufscar.dc.dsw.domain;
 
 public class SitesDeVenda {
 	
+	private int id;
 	private String nome;
 	private String email;
 	private String senha;
 	private String endereco;
 	private String telefone;
 	
+
 	
 
-
-
-	public SitesDeVenda() {
+	public SitesDeVenda(int id, String nome) {
 		// TODO Auto-generated constructor stub
+        this.id = id;
+        this.nome = nome;
+      
 	}
-
-	
 
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -49,6 +50,18 @@ public class SitesDeVenda {
 	
 	public String getEndereco() {
 		return endereco;
+	}
+
+
+
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 
