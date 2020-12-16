@@ -1,7 +1,5 @@
 package br.ufscar.dc.dsw.controller;
 
-import br.ufscar.dc.dsw.dao.EditoraDAO;
-import br.ufscar.dc.dsw.dao.LivroDAO;
 import br.ufscar.dc.dsw.dao.SalasDeTeatroDAO;
 import br.ufscar.dc.dsw.domain.SalasDeTeatro;
 

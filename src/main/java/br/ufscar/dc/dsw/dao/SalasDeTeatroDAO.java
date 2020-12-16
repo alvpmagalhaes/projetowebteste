@@ -37,13 +37,13 @@ public class SalasDeTeatroDAO extends GenericDAO {
         }
     }
 
+
     public List<SalasDeTeatro> getAll() {
 
         List<SalasDeTeatro> listateatros = new ArrayList<>();
 
         String sql = "SELECT * from SalasDeTeatro l, nome e where l.SalasDeTeatro_id = e.ID order by l.id";
-
-        try {
+ {
             Connection conn = this.getConnection();
             Statement statement = conn.createStatement();
 
