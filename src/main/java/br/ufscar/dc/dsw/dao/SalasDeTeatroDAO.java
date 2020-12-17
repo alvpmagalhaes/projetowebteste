@@ -1,9 +1,9 @@
 package br.ufscar.dc.dsw.dao;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -67,11 +67,10 @@ public class SalasDeTeatroDAO extends GenericDAO {
             statement.close();
             conn.close();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e); 
         }
         return listateatros;
     }
-
     public void delete(SalasDeTeatro salasdeteatro) {
         String sql = "DELETE FROM SalasDeTeatro where id = ?";
 
@@ -88,57 +87,4 @@ public class SalasDeTeatroDAO extends GenericDAO {
             throw new RuntimeException(e);
         }
     }
-
-   /* public void update(SalasDeTeatro salasdeteatro) {
-        String sql = "UPDATE SalasDeTeatro SET cnpj = ?, nome = ?, email = ?, cidade = ?";
-       // sql += ", SiteVendaDeIngressos_id = ? WHERE id = ?";
-
-        try {
-            Connection conn = this.getConnection();
-            PreparedStatement statement = conn.prepareStatement(sql);
-
-            statement.setString(1, salasdeteatro.getCnpj());
-            statement.setString(2, salasdeteatro.getNome());
-            statement.setString(3, salasdeteatro.getEmail());
-            statement.setString(4, salasdeteatro.getCidade());
-            statement.executeUpdate();
-
-            statement.close();
-            conn.close();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    } */
-
-  /*  public SalasDeTeatro get(int id) {
-        SalasDeTeatro salasdeteatro = null;
-
-        String sql = "SELECT * from SalasDeTeatro l, Editora e where l.id = ? and l.EDITORA_ID = e.ID";
-
-        try {
-            Connection conn = this.getConnection();
-            PreparedStatement statement = conn.prepareStatement(sql);
-
-            statement.setLong(1, id);
-            ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                String titulo = resultSet.getString("titulo");
-                String autor = resultSet.getString("autor");
-                int ano = resultSet.getInt("ano");
-                float preco = resultSet.getFloat("preco");
-
-                Long editoraID = resultSet.getLong("editora_id");
-                Editora editora = new EditoraDAO().get(editoraID);
-
-                livro = new Livro(id, titulo, autor, ano, preco, editora);
-            }
-
-            resultSet.close();
-            statement.close();
-            conn.close();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return livro;
-    } */
 }
