@@ -42,8 +42,8 @@ public class SalasDeTeatroDAO extends GenericDAO {
 
         List<SalasDeTeatro> listateatros = new ArrayList<>();
 
-        String sql = "SELECT * from SalasDeTeatro l, nome e where l.SalasDeTeatro_id = e.ID order by l.id";
- {
+        String sql = "SELECT * from SalasDeTeatro";
+try {
             Connection conn = this.getConnection();
             Statement statement = conn.createStatement();
 

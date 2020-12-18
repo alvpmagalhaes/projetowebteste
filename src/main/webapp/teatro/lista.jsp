@@ -45,15 +45,14 @@
 					<th><fmt:message key="purchase.book.author" /></th>
 					<th><fmt:message key="purchase.book.year" /></th>
 				</tr>
-				<c:forEach var="compra" items="${requestScope.listaCompras}">
+				<c:forEach var="teatro" items="${requestScope.listaTeatros}">
 					<tr>
-						<td>${compra.id}</td>
-						<td>${compra.data}</td>
-						<td>${compra.valor}</td>
-						<td>${compra.livro.titulo}</td>
-						<td>${compra.livro.editora.nome}</td>
-						<td>${compra.livro.autor}</td>
-						<td>${compra.livro.ano}</td>
+						<td>${teatro.id}</td>
+						<td>${teatro.cnpj}</td>
+						<td>${teatro.nome}</td>
+						<td>${teatro.email}</td>
+						<td>${teatro.senha}</td>
+						<td>${teatro.cidade}</td>
 					</tr>
 				</c:forEach>
 			</table>

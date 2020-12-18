@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/salasdeteatro/*")
+@WebServlet(urlPatterns = "/teatro/*")
 public class SalasDeTeatroController extends HttpServlet {
 
     private static final long serialVersionUID = 1L; 
@@ -71,7 +71,7 @@ public class SalasDeTeatroController extends HttpServlet {
     private void lista(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<SalasDeTeatro> listateatros = dao.getAll();
         request.setAttribute("listateatros", listateatros);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/salasdeteatro/lista.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/teatro/lista.jsp");
         dispatcher.forward(request, response);
     }
 
