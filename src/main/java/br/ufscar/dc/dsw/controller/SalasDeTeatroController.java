@@ -71,7 +71,7 @@ public class SalasDeTeatroController extends HttpServlet {
     private void lista(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<SalasDeTeatro> listateatros = dao.getAll();
         request.setAttribute("listateatros", listateatros);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/teatro/lista.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/teatros/lista.jsp");
         dispatcher.forward(request, response);
     }
 

@@ -45,7 +45,7 @@
 					<th><fmt:message key="purchase.book.author" /></th>
 					<th><fmt:message key="purchase.book.year" /></th>
 				</tr>
-				<c:forEach var="teatro" items="${requestScope.listaTeatros}">
+				<c:forEach var="teatro" items="${requestScope.listateatros}">
 					<tr>
 						<td>${teatro.id}</td>
 						<td>${teatro.cnpj}</td>
