@@ -19,8 +19,10 @@
 				<fmt:message key="purchases.welcome" />
 			</h1>
 			<h2>
-				<a href="lista"> <fmt:message key="purchases.list" />
-				</a> &nbsp;&nbsp;&nbsp; <a
+				<a href="/LivrariaJSP/teatro/lista.jsp"> <fmt:message key="purchases.list" />
+				</a> &nbsp;&nbsp;&nbsp; 
+				
+				<a
 					href="${pageContext.request.contextPath}/logout.jsp"> <fmt:message
 						key="exit.link" />
 				</a>

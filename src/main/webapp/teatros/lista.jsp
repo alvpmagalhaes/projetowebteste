@@ -20,7 +20,7 @@
 				<fmt:message key="purchases.welcome" />
 			</h1>
 			<h2>
-				<a href="/<%=contextPath%>/compras/cadastro"> 
+			  	<a href="/<%=contextPath%>/logado/promo/lista.jsp"> 
 					<fmt:message key="purchases.create" />
 				</a> 
 				&nbsp;&nbsp;&nbsp; 
@@ -40,18 +40,13 @@
 					<th><fmt:message key="purchase.ID" /></th>
 					<th><fmt:message key="purchase.date" /></th>
 					<th><fmt:message key="purchase.value" /></th>
-					<th><fmt:message key="purchase.book.title" /></th>
-					<th><fmt:message key="purchase.book.publisher" /></th>
 					<th><fmt:message key="purchase.book.author" /></th>
-					<th><fmt:message key="purchase.book.year" /></th>
 				</tr>
 				<c:forEach var="teatro" items="${requestScope.listateatros}">
 					<tr>
 						<td>${teatro.id}</td>
 						<td>${teatro.cnpj}</td>
 						<td>${teatro.nome}</td>
-						<td>${teatro.email}</td>
-						<td>${teatro.senha}</td>
 						<td>${teatro.cidade}</td>
 					</tr>
 				</c:forEach>

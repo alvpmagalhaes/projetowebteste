@@ -20,20 +20,16 @@
 				<fmt:message key="books.welcome" />
 			</h1>
 			<h2>
-				<a href="/<%=contextPath%>/editoras">
+				<a href="/<%=contextPath%>/teatro/lista.jsp">
 					<fmt:message key="publishers.entity" />
 				</a>
-				&nbsp;&nbsp;&nbsp;
-				<a href="/<%=contextPath%>/usuarios"> 
-					<fmt:message key="users.entity" />
-				</a> 
 				&nbsp;&nbsp;&nbsp;
 			    <a href="${pageContext.request.contextPath}/logout.jsp">
 					<fmt:message key="exit.link" />
 				</a>
 				<br/>
 				<br/>
-				<a href="/<%=contextPath%>/livros/cadastro">
+				<a href="/<%=contextPath%>/logado/promo/formulario.jsp">
 					<fmt:message key="books.create" />
 				</a>
 			</h2>

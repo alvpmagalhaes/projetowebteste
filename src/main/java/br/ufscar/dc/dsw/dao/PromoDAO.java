@@ -40,7 +40,7 @@ public class PromoDAO extends GenericDAO{
 
         List<Promo> listaPromos = new ArrayList<>();
 
-        String sql = "SELECT * from CadastroPromocoes wher nome_peca";
+        String sql = "SELECT * from CadastroPromocoes where nome_peca";
 
         try {
             Connection conn = this.getConnection();
