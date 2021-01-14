@@ -7,7 +7,11 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
 import br.ufscar.dc.dsw.domain.Promo;
+import br.ufscar.dc.dsw.domain.SalasDeTeatro;
+import br.ufscar.dc.dsw.domain.SitesDeVenda;
 
 public class PromoDAO extends GenericDAO{
 	
@@ -36,34 +40,39 @@ public class PromoDAO extends GenericDAO{
     }
 	
 	
-	public List<Promo> getAll() {
+	 public List<Promo> getAll() {
 
-        List<Promo> listaPromos = new ArrayList<>();
+	        List<Promo> listateatros = new ArrayList<>();
 
-        String sql = "SELECT * from CadastroPromocoes where nome_peca";
+	        String sql = "SELECT * from SalasDeTeatro";
+	try {
+	            Connection conn = this.getConnection();
+	            Statement statement = conn.createStatement();
 
-        try {
-            Connection conn = this.getConnection();
-            Statement statement = conn.createStatement();
+	            ResultSet resultSet = statement.executeQuery(sql);
+	            while (resultSet.next()) {
+	                int id = resultSet.getInt("id");
+	                String cnpj = resultSet.getString("cnpj");
+	                String nome = resultSet.getString("nome");
+	                String email = resultSet.getString("email");
+	                String senha = resultSet.getString("senha");
+	                String cidade = resultSet.getString("cidade");
+	        
+	                SitesDeVenda sitesdevenda = new SitesDeVenda(id, nome);
+	               //  Editora editora = new Editora(editora_id, cnpj, nome);
+	                Promo promos = new Promo (id, nome, cnpj, cidade);
+	               // Livro livro = new Livro(id, titulo, autor, ano, preco, editora);
+	                listateatros.add(Promos);
+	            }
 
-            ResultSet resultSet = statement.executeQuery(sql);
-            while (resultSet.next()) {
-                String cnpj = resultSet.getString("cnpj");
-                String nome_peca = resultSet.getString("nome_peca");
-                String endereco = resultSet.getString("url");
-                String preco = resultSet.getString("preco");
-                Promo promo = new Promo(cnpj, nome_peca, endereco, preco);
-                listaPromos.add(promo);
-            }
-
-            resultSet.close();
-            statement.close();
-            conn.close();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return listaPromos;
-    }
+	            resultSet.close();
+	            statement.close();
+	            conn.close();
+	        } catch (SQLException e) {
+	            throw new RuntimeException(e);
+	        }
+	        return listapromo;
+	    }
 
 
 }
