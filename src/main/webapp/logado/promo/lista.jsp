@@ -45,7 +45,6 @@
 					<th><fmt:message key="book.author" /></th>
 					<th><fmt:message key="book.year" /></th>
 					<th><fmt:message key="book.price" /></th>
-					<th><fmt:message key="actions.link" /></th>
 				</tr>
 				<c:forEach var="livro" items="${requestScope.listaLivros}">
 					<tr>

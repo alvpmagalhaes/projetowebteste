@@ -13,6 +13,10 @@ public class Promo {
 	public Promo(String nomePeca) {
 	}
 	
+	public Promo(String cnpj, String nome_peca, String endereco2, String preco2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
