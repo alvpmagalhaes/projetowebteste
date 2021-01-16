@@ -40,24 +40,26 @@
 			<table border="1">
 				<tr>
 					<th><fmt:message key="book.ID" /></th>
-					<th><fmt:message key="book.title" /></th>
 					<th><fmt:message key="book.publisher" /></th>
+					<th><fmt:message key="book.title" /></th>
 					<th><fmt:message key="book.author" /></th>
 					<th><fmt:message key="book.year" /></th>
 					<th><fmt:message key="book.price" /></th>
+					<th><fmt:message key="book.horario" /></th>
 				</tr>
-				<c:forEach var="livro" items="${requestScope.listaLivros}">
+				<c:forEach var="promo" items="${requestScope.listapromo}">
 					<tr>
-						<td>${livro.id}</td>
-						<td>${livro.titulo}</td>
-						<td>${livro.editora.nome}</td>
-						<td>${livro.autor}</td>
-						<td>${livro.ano}</td>
-						<td>${livro.preco}</td>
-						<td><a href="/<%= contextPath%>/livros/edicao?id=${livro.id}">
+						<td>${promo.id}</td>
+						<td>${promo.cnpj}</td>
+						<td>${promo.nome_peca}</td>
+						<td>${promo.url}</td>
+						<td>${promo.preco}</td>
+						<td>${promo.dia}</td>
+						<td>${promo.horario}</td>
+						<td><a href="/<%= contextPath%>/promo/edicao?id=${promo.id}">
 								<fmt:message key="books.update" />
 						</a> &nbsp;&nbsp;&nbsp;&nbsp; <a
-							href="/<%= contextPath%>/livros/remocao?id=${livro.id}"
+							href="/<%= contextPath%>/promo/remocao?id=${promo.id}"
 							onclick="return confirm('<fmt:message key="confirm.link" />');">
 								<fmt:message key="books.delete" />
 						</a></td>

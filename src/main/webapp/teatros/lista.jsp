@@ -20,7 +20,7 @@
 				<fmt:message key="purchases.welcome" />
 			</h1>
 			<h2>
-			  	<a href="/<%=contextPath%>/logado/promo/lista.jsp"> 
+			  	<a href="/<%=contextPath%>/promo/lista.jsp"> 
 					<fmt:message key="purchases.create" />
 				</a> 
 				&nbsp;&nbsp;&nbsp; 
