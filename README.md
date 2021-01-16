@@ -20,4 +20,4 @@ Internacionalização R9: O sistema deve ser internacionalizado em pelo menos do
 
 Requisitos Desenvolvidos
 
-R3, R5, R7, R9
+R1, R2, R3, R5, R7
