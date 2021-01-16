@@ -1,57 +1,104 @@
 package br.ufscar.dc.dsw.domain;
 
-import java.util.*;
-
 public class Promo {
 	
-	private String endereco;
-	private String cnpjTeatro;
-	private String nomePeca;
+	private int id;
+	private String email;
+	private String senha;
+	private String cnpj;
+	private String nome_peca;
+	private String url;
 	private String preco;
-	private Date diahora;
+	private String dia;
+	private String horario;
 	
-	public Promo(String nomePeca) {
-	}
 	
-	public Promo(String cnpj, String nome_peca, String endereco2, String preco2) {
-		// TODO Auto-generated constructor stub
-	}
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
-	
-	public void setCnpj(String cnpjTeatro) {
-		this.cnpjTeatro = cnpjTeatro;
-	}
-	
-	public void setPeca(String peca) {
-		this.nomePeca = peca;
-	}
-	
-	public void setPreco(String preco) {
+	public Promo(int id, String nome_peca, String cnpj, String url, String preco, String dia, String horario) {
+		this.id = id;
+		this.nome_peca = nome_peca;
+		this.cnpj = cnpj;
+		this.url = url;
 		this.preco = preco;
+		this.dia = dia;
+		this.horario = horario;
+
+	}
+	
+	
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+
+	}
+	
+	public void setNome_peca(String nome_peca) {
+		this.nome_peca = nome_peca;
 	}
 
-	public String getEndereco() {
-		return endereco;
+	
+	
+	
+	
+	public String getEmail() {
+		return email;
 	}
 
+	public String getNome_peca() {
+		return nome_peca;
+	}
+	
 	public String getCnpj() {
-		return cnpjTeatro;
+		return cnpj;
+	}
+	
+	public String getSenha() {
+		return senha;
+	}
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	
 	public String getPreco() {
 		return preco;
 	}
-	
-	public Date getDiahora() {
-		return diahora;
+
+	public void setPreco(String preco) {
+		this.preco = preco;
 	}
 	
-	public String getNomePeca() {
-		return nomePeca;
+	public String getDia() {
+		return dia;
+	}
+
+	public void setDia(String dia) {
+		this.dia = dia;
 	}
 	
+	public String getHorario() {
+		return horario;
+	}
+
+	public void setHorario(String horario) {
+		this.horario = horario;
+	}
+
 
 }
